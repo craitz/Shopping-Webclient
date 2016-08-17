@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"	
+	xmlns:layout="http://ultraq.net.nz/thymeleaf/layout">
+<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width"/>
+		
+		<title>Lista de compras</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Nome</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="link : ${links}">
+				<td th:text="${link.rel}"></td>
+			</tr>
+<!-- 			<tr> -->
+<!-- 				<td th:text="${link}"></td> -->
+<!-- 			</tr> -->
+		</tbody>
+	</table>
+	
+	
+
+	<label th:text="${texto}"></label>
+</body>
+</html>
